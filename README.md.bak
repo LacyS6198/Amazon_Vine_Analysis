@@ -32,24 +32,7 @@ vine_filtered_Unpaid_df.show(5)
 ```
 
 # Results
-Below are the results of Vine (Paid) vs non-Vine (Unpaid) reviews.
 
-## Total Reviews by Type
- - Vine Reviews:  94
- - Non-Vine Reviews:  40471
-
-## Total 5-Star Reviews by Type
- - Vine Reviews with 5-Stars:  48
- - Non-Vine Reviews with 5-Stars:  15663
- 
- ## Percentage of 5-Star Reviews by Type
- - Percentage of Vine Reviews with 5-Stars:  51.06%
- - Percentage of Non-Vine Reviews with 5-Stars:  38.70%
 
 # Summary
-Vine/Paid reviews had a much higher percentage of 5-star reviews, indicating that these types of reviews may be biased to positive comments. 51.06% of the Vine reviews were 5-stars, compared to only 38.70% of non-Vine reviews. 
-It should be noted though that there were significantly fewer Vine reviews taken into account for this analysis (94 Vine reviews vs 40,471 non-Vine reviews). 
 
-Additional analysis could include:
- - Analyzing all stars (1 - 5) percentages to see if the positive-bias trend continues throughout the data.
- - Compare number of helpful reviews by type to determine if the Vine are as helpful as the non-Vine. The high number of Vine 5-star reviews could be due to the number of helpful votes. As a whole, there might not be any bias in the review but rather the voting of helpfulness.
