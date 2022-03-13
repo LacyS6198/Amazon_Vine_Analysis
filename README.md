@@ -8,13 +8,13 @@ After filtering the data, analysis was done based on whether it was a paid (Vine
 PySpark was used for this analysis using Google Colab. 
 Below are the code snippets used to filter the data.
 
-### Filter for games with 20 or more reviews.
+#### Filter for games with 20 or more reviews.
 ```
 vine_filtered_df = df.filter("total_votes>=20").select(["review_id", "star_rating", "helpful_votes", "total_votes", "vine", "verified_purchase"])
 vine_filtered_df.show(5)
 ```
 
-### Filter for "helpful" reviews
+#### Filter for "helpful" reviews
 ```
 vine_filtered_df2 = vine_filtered_df.filter("(helpful_votes/total_votes)>=.5").select(["review_id", "star_rating", "helpful_votes", "total_votes", "vine", "verified_purchase"])
 vine_filtered_df2.show(5)
@@ -45,6 +45,10 @@ Below are the results of Vine (Paid) vs non-Vine (Unpaid) reviews.
  ## Percentage of 5-Star Reviews by Type
  - Percentage of Vine Reviews with 5-Stars:  51.06%
  - Percentage of Non-Vine Reviews with 5-Stars:  38.70%
+ 
+![Vine](https://user-images.githubusercontent.com/93630042/158064121-b50e33a0-8134-474c-8efd-5d4944b7d65f.png)
+
+![NonVine](https://user-images.githubusercontent.com/93630042/158064125-b35822f0-d562-4584-98c3-8ca49fbd3b4b.png)
 
 # Summary
 Vine/Paid reviews had a much higher percentage of 5-star reviews, indicating that these types of reviews may be biased to positive comments. 51.06% of the Vine reviews were 5-stars, compared to only 38.70% of non-Vine reviews. 
